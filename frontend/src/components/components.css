@@ -1,0 +1,27 @@
+.sidebar-menu .ant-menu-item {
+    background-color: transparent !important;
+  }
+  
+  .sidebar-menu .ant-menu-item-selected {
+    background-color: #70DAD2 !important;
+    border-radius: 10px;
+  }
+  
+  .sidebar-menu .ant-menu-item a {
+    color: #023047 !important;
+    /* font-size: 17px; */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .sidebar-menu .ant-menu-item a:hover {
+    color: #70DAD2 !important; /* Highlight color when hovered */
+  }
+  
+  .sidebar-menu .ant-menu-item-icon {
+    font-size: 15px !important;
+  }
+  
+  .sidebar-menu .ant-menu-item .ant-menu-title-content {
+    margin-left: 10px;
+  }
+  

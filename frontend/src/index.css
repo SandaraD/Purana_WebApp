@@ -1,0 +1,256 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.site-details .ant-card {
+  margin: 20px auto;
+  padding: 20px;
+  font-size: clamp(15px, 1vw, 50px);
+  min-width: fit-content;
+  background-color: #e0ddd6;
+  color: #131c2d;
+}
+.site-details .ant-card-head-title {
+  font-size: clamp(20px, 2vw, 60px);
+}
+
+.site-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+.site-details {
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+/* form */
+
+.bg_img {
+  display: flex;
+  justify-content: center;
+}
+
+.Admin_form{
+  backdrop-filter: blur(3px);
+  padding: 0px 16px 16px 16px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #dad6ca00;
+}
+.submit_btn{
+  background-color: #131c2d;
+  color: white;
+  width: 250px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+.submit_btn:hover{
+  background-color: #2f3d56 !important;
+  color: white!important;
+}
+.Card{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-width: 800px;
+  margin: auto;
+  
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+.actions-column {
+  justify-content: flex-end;
+  display: flex;
+}
+
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff00;
+  border-radius: 4px;
+}
+
+header {
+  background: #ECEFF1;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #023047;
+  text-decoration: none;
+}
+
+header h2 {
+  color: #023047;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+header nav .nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header nav .nav-links li {
+  margin-left: 20px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+header nav .nav-links a {
+  color: #023047;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+header .auth-section {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.menu-icon {
+  display: none; 
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .ant-table {
+        font-size: 12px;
+    }
+    .ant-modal {
+        width: 90vw;
+    }
+    .ant-form-item {
+        margin-bottom: 8px;
+    }
+}
+
+
+  .nav-links {
+    display: none; /* Hide nav links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #131C2D;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+}
+
+.bgimg {
+  background-image: linear-gradient(rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.5)),url("/Users/sandaradewmini/Documents/Kingston FINAL Project/Kingston Final Project/frontend/assets/mirissa.jpg");
+  background-size:     cover;                    
+  background-repeat:   no-repeat;
+  background-position: center center; 
+}
+
+.sidebar-headings {
+  /* color: #023047; */
+  color: red;
+  padding-top: 8px;
+}
