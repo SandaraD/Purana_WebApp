@@ -4,7 +4,7 @@ const LocationService = ({ value, onChange }) => {
   const [map, setMap] = useState(null);
   const [autocomplete, setAutocomplete] = useState(null);
   const mapRef = useRef(null); 
-  const apiKey = 'AIzaSyBrSocPjMngvDVUmO7CDPVPR6pV5zyO9SA';
+  const apiKey = 'API_KEY';
 
   useEffect(() => {
     if (!window.google || !window.google.maps) {
